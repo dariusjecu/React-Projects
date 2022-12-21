@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.75rem;
+}
+
+:root{
+    --main-color: #a54227;
+    --main-color-blur: 165, 66, 39;
+    --second-color: #2d2d2d;
+    --second-color-blur: 45, 45, 45;
+    --third-color: #e4ddf4;
+    --el-color: #ffffff;
+
+    --width-desktop: 65%;
+    --width-tablet: 75%;
+    --width-mobile: 80%;
+}
+
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--second-color);
+    overflow: hidden;
+    position: relative;
+}
+
+section{
+    margin-top: 5em;
+    color: var(--el-color);
+    text-align: center;
+    font-size: 1.25rem;
+    z-index: 10;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 1rem 0;
+}
+
+.spatter{
+    width: 40vw;
+    height: 40vw;
+    transform: rotate(180deg);
+    position: absolute;
+    margin: -15vw 0 0 -2vw;
+    color: var(--main-color);
+    z-index: -99;
+}
+
+.right{
+    right: 0;
+    transform: rotate(323deg);
+    margin: -10vw -17vw 0 0;
+}
+
+.bottom{
+    right: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+    margin: 0;
+    margin-right: -2vw;
+    margin-bottom: -3vw;
+}
+
+.btn{
+    color: var(--el-color);
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--el-color);
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.trans{
+    transition: 400ms;
+}
+
+.icon{
+    color: var(--el-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.icon:hover{
+    color: var(--el-color);
+}
+
+/*-------------------------Mobile-------------------------*/
+
+@media screen and (max-width: 600px){
+   .spatter{
+        width: 50vw;
+        height: 50vw;
+   }
+   .right{
+        margin: -10vw -20vw 0 0;
+   }
+}
+
+/*-------------------------Tablet-------------------------*/
+
+@media screen and (max-width: 1024px){
+    .right{
+        margin: -10vw -20vw 0 0;
+   }
+}

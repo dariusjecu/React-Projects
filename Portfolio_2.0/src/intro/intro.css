@@ -1,0 +1,88 @@
+.icon{
+    color: var(--el-color);
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.buttons .change{
+    background-color: var(--second-color);
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.socials::after{
+    content: "";
+    height: 4rem;
+    width: 1px;
+    background: var(--el-color);
+}
+
+.socials::before{
+    content: "";
+    height: 4rem;
+    width: 1px;
+    background: var(--el-color);
+    margin-bottom: 1rem;
+}
+
+.image-me{
+    background-color: var(--main-color);
+    width: fit-content;
+    border-radius: 20rem 20rem 0 0;
+}
+
+.image-me img{
+    width: 30rem;
+    margin-top: 3rem;
+    margin-bottom: -0.5rem;
+}
+
+/*-------------------------Mobile-------------------------*/
+
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--width-mobile);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+    .socials{
+        display: none;
+    }
+    .about-me{
+        grid-template-columns: 1fr;
+    }
+    .image-me img{
+        width: 15rem;
+    }
+    .btn{
+       font-size: 0.9rem; 
+    }
+}

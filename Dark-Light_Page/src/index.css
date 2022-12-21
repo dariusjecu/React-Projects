@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size: 1.75vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #282D35;
+  line-height: 35px;
+  color: white;
+}
+
+h1{
+  margin: 0;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid black;
+}
+
+.dark-header{
+  background-color: #21222A;
+}
+
+.white-header{
+  background-color: rgb(119, 115, 115);
+  color: black;
+}
+
+.dark-content{
+  background-color: #282D35;
+  color: white;
+}
+
+.white-content{
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 3em;
+  margin-right: 1em;
+}
+
+.logo h1{
+  color: #00D8FF;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
+}
+
+.toggle-body{
+  margin: 0 1em;
+  width: 3.5em;
+  height: 2em;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-body-light{
+  background-color: black;
+  justify-content: flex-end;
+}
+
+.toggle-body-dark{
+  background-color: white;
+  justify-content: flex-start;
+}
+
+.circle{
+  width: 50%;
+  height: 88%;
+  background-color: white;
+  margin: 0 2px;
+  border-radius: 20px;
+}
+
+.circle-light{
+  background-color: white;
+}
+
+.circle-dark{
+  background-color: black;
+}
+
+.content{
+  margin: 10vh 0;
+  font-size: 1.2rem;
+}
+
+.text{
+  margin: 0 2em;
+}
+
+.back-image{
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 13em;
+  position: fixed;
+  top: 40%;
+}
+
+.back-image-light{
+  background-image: url("../public/images/react-icon-dark.png");
+}
+
+.back-image-dark{
+  background-image: url("../public/images/react-icon-light.png");
+}

@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: black;
+  margin: 0;
+  font-size: 1.75vh;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  background-color: #F47B6E;
+}
+
+header img{
+  width: 2.5em;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header h1{
+  color: black;
+}
+
+header input{
+  width: 40vw;
+  height: 2.5em;
+  padding: 0 1em;
+}
+
+header button{
+  height: 2.5em;
+  margin-left: 0.2em;
+  width: fit-content;
+}
+
+.home-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1em 3em;
+}
+
+.image-block{
+  margin: 0.5em 0;
+}
+
+.image-block img{
+  position: absolute;
+  width: 1.5em;
+  margin: 1.2em;
+  cursor: pointer;
+}
+
+#small-cart{
+  margin-left: 19em;
+  width: 2em;
+}
+
+.image-block img:last-child{
+  position: relative;
+  width: 22em;
+  height: 14em;
+  z-index: -1;
+  margin: 0;
+  border: 1px solid black;
+  padding: 0.25em;
+}
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em 3em 1em 1.5em;
+}
+
+.checkout button{
+  align-self: center;
+  width: 13em;
+  height: 3em;
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.checkout h2{
+  align-self: flex-end;
+}
+
+.element-cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.element-cart img:last-child{
+  width: 17em;
+  border: 1px solid black;
+  padding: 0.25em;
+}
+
+.trash{
+  width: 2em;
+  margin-right: 2em;
+  cursor: pointer;
+}
+
+.trash:hover{
+  content: url("../public/trash-hover.png");
+}
+
+.first-two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,139 @@
+#contact{
+    margin-top: 3rem;
+}
+
+#contact h2{
+    color: var(--main-color);
+}
+
+.contact{
+    width: var(--width-desktop);
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    gap: 5rem;
+    margin-bottom: 10rem;
+    overflow-y: hidden;
+    max-height: 100%;
+    padding-top: 1rem;
+}
+
+.contact .img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.contact-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact-box{
+    width: 15rem;
+    font-size: 0.9rem;
+    border: 1px solid var(--el-color);
+    border-radius: 10px;
+    padding: 1rem .5rem;
+    background-color: var(--main-color);
+    transition: 400ms;
+}
+
+.contact-box:hover{
+    background-color: transparent;
+}
+
+.contact-box a{
+    color: var(--el-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.check{
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-self: center;
+}
+
+input, textarea{
+    height: 3rem;
+    background-color: var(--second-color);
+    color: var(--el-color);
+    border: 1px solid var(--el-color);
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
+textarea{
+    height: 40%;
+    padding: 1rem;
+}
+
+form .btn{
+    width: 30%;
+    cursor: pointer;
+}
+
+.social{
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social .img{
+    width: 3rem;
+    height: 3rem;
+    color: var(--el-color);
+}
+
+.social::after{
+    content: "";
+    height: 1px;
+    width: 40%;
+    background-color: var(--el-color);
+}
+
+.social::before{
+    content: "";
+    height: 1px;
+    width: 40%;
+    background-color: var(--el-color);
+}
+
+/*-------------------------Mobile-------------------------*/
+
+@media screen and (max-width: 600px){
+    .contact{
+        width: var(--width-mobile);
+        display: flex;
+        flex-direction: column;
+    }
+    form .btn{
+        width: 50%;
+    }
+}
+
+/*-------------------------Tablet-------------------------*/
+
+@media screen and (min-width: 601px)  and (max-width: 1024px){
+    .contact{
+        width: var(--width-tablet);
+        grid-template-columns: 30% 55%;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .contact-box{
+        width: 12rem;
+    }
+    form .btn{
+        width: 50%;
+    }
+}
