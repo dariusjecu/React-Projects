@@ -1,0 +1,45 @@
+.header{
+    display: flex;
+    width: 100vw;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    background-color: #121212;
+}
+
+.header input{
+    width: 50vw;
+    height: 1.75rem;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    padding: 0 0.5rem;
+    color: black;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search::after{
+    margin-left: 2rem;
+    content: "";
+    width: 1px;
+    height: 40px;
+    background-color: grey;
+}
+
+.search svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: -2rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.header img{
+    width: 4.5rem;
+}

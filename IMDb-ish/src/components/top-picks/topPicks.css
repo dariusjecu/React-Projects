@@ -1,0 +1,69 @@
+.top-picks h1{
+    margin: 0;
+}
+
+.top-picks{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto;
+    width: 70vw;
+    font-size: 1em;
+    gap: 1rem
+}
+
+.list{
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    width: inherit;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.list .navigation{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: inherit;
+}
+
+.list .navigation svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 26, 26, 0.5);
+    font-size: 4rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    width: 3rem;
+    height: 4rem;
+}
+
+.top-picks .desc{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.top-picks .desc::before{
+    content:"";
+    width: 10px;
+    height: 3rem;
+    background-color: #E6B91E;
+}
+
+.top-picks .desc:hover > .el{
+    color: #E6B91E;
+}
+
+.top-picks .desc .el{
+    width: 2rem;
+    height: 2rem;
+    padding-top: .5rem;
+}

@@ -1,0 +1,65 @@
+.hero{
+    margin: 1rem 3vw;
+    width: 94vw;
+    height: 35rem;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 55% 45%;
+}
+
+.hero h1, .hero h2{
+    margin: 0;
+}
+
+.hero h1{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.hero h2{
+    font-size: 1.25rem;
+}
+
+.hero .navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.hero .navigation svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 26, 26, 0.5);
+    font-size: 4rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    width: 3rem;
+    height: 4rem;
+}
+
+.hero .content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.hero .content img{
+    width: 9rem;
+    height: 13rem;
+    justify-self: center;
+}
+
+.hero .content .desc{
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero .content .desc svg{ 
+    width: 4rem;
+    height: 4rem;
+}
